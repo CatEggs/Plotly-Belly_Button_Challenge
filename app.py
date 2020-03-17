@@ -95,7 +95,8 @@ def samples(sample):
         "otu_labels": sample_data.otu_label.tolist(),
     }
     return jsonify(data)
+    
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
